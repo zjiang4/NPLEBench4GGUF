@@ -10,6 +10,15 @@ The examination items are from the Chinese National Pharmacist Licensing Examina
 
 Zong H, Li J, Wu E, Wu R, Lu J, Shen B. Performance of ChatGPT on Chinese national medical licensing examinations: a five-year examination evaluation study for physicians, pharmacists and nurses. *BMC Med Educ*. 2024;24(1):143. doi:[10.1186/s12909-024-05125-7](https://doi.org/10.1186/s12909-024-05125-7)
 
+To build the text-only item set used in the study (Python 3.9 or later, standard library only):
+
+```bash
+git clone https://github.com/zonghui0228/LLM-Chinese-NMLE.git
+python scripts/prepare_nplebench.py --source LLM-Chinese-NMLE --output data
+```
+
+The script writes `questions.json`, `answers.json`, and `excluded.json`. Items whose options are images or whose stems refer to a figure are excluded; `excluded.json` lists each excluded item and the reason.
+
 ## Contact
 
 - Tianpeng Zheng: ztpkc1026@stu.pku.edu.cn
