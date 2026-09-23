@@ -17,7 +17,7 @@ git clone https://github.com/zonghui0228/LLM-Chinese-NMLE.git
 python scripts/prepare_nplebench.py --source LLM-Chinese-NMLE --output data
 ```
 
-The script writes `questions.json`, `answers.json`, and `excluded.json`. Items whose options are images or whose stems refer to a figure are excluded; `excluded.json` lists each excluded item and the reason.
+The script writes `questions.json`, `answers.json`, `item_metadata.json`, and `excluded.json`. Items whose options are images or whose stems refer to a figure are excluded; `excluded.json` lists each excluded item and the reason. `item_metadata.json` gives each item's year, examination unit and subject, response format (single or multiple), and number of options.
 
 ## Contact
 
